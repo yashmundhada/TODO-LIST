@@ -10,7 +10,6 @@ $('#add-task-container').on('shown.bs.modal', function () {
  * of tasks of the user and then calls addTaskToList() to add 
  * them to HTML one after the other after all task are added to
  * HTML then calls updateTaskCount()
- * @author Gupta Shrinath <https://github.com/gupta-shrinath>
 */
 async function createTaskList() {
     // Get account from the Ganache EVM //
@@ -60,7 +59,6 @@ async function createTaskList() {
 /**
  * addTaskToList() takes the task atributes and adds them to 
  * the HTML
- * @author Gupta Shrinath <https://github.com/gupta-shrinath>
  * @param {number} id 
  * @param {string} name 
  * @param {boolean} status 
@@ -137,7 +135,7 @@ async function removeTask(taskIndex) {
  * changeTaskStatus() change the status of task in blockchain and 
  * then in the HTML
  * Note: The id is the checkbox id {item-taskIndex-checkbox}
- * @author Gupta Shrinath <https://github.com/gupta-shrinath>
+ 
  * @param {string} id 
  * @param {number} taskIndex 
  */
@@ -164,7 +162,7 @@ async function changeTaskStatus(id, taskIndex) {
 /**
  * updateTaskCount() update the number of task in HTML by counting 
  * the number of item in the ul element 
- * @author Gupta Shrinath <https://github.com/gupta-shrinath>
+ 
  */
 function updateTasksCount() {
     // Get the element of ul tag //
@@ -180,7 +178,7 @@ function updateTasksCount() {
 /**
  * addTask() add the task to the HTML via adddTasktoList() and then 
  * add it to blockchain and update the count via updateTaskCount() 
- * @author Gupta Shrinath <https://github.com/gupta-shrinath>
+ 
  * @param {string} name 
  */
 async function addTask(name) {
